@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hit it!</title>
+  <link rel="shortcut icon" href="#">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <h1>Can you catch Baekhyun?</h1>
+    <div>
+      <button type="button" class="btn" id="start_button" onclick="startTheGame(); moveMole();startCountDown();">Start the game</button>
+      <button type="button" class="btn" id="retry_button" onclick="restartGame();">Re-start game</button>
+      <h2>Time Remaining: <span id="time-left">30 secs</span></h3>
+    </div>
+  </header>
+  <main>
+    
+    <div class="tiles">
+      <button class="tile" id="box1" disabled></button>
+      <button class="tile" id="box2" disabled></button>
+      <button class="tile" id="box3" disabled></button>
+      <button class="tile" id="box4" disabled></button>
+      <button class="tile" id="box5" disabled></button>
+      <button class="tile" id="box6" disabled></button>
+      <button class="tile" id="box7" disabled></button>
+      <button class="tile" id="box8" disabled></button>
+      <button class="tile" id="box9" disabled></button>
+    </div>
+   
+    
+  </main>
+   
+  <footer>
+    <div class="score-card">
+      <h2>Score: <span id="score">0</span></h2>
+      <!--<h2>No. of games played: <span id="gamesPlayed">0</span></h2>  -->
+    </div>
+    <div><h4>Made by divyap09</h4></footer></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
